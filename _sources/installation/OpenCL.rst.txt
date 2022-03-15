@@ -11,7 +11,7 @@ The current compiler version is gcc version 7.3.0. Other compilers may be used o
 
 Intel HD graphics after the Skylake generation usually support OpenCL as long as the suitable intel-sdk is installed.  
 
-One OpenCL example is a Gigabyte aero 14 Gentoo Linux on a machine with Intel Corporation HD Graphics 530 (rev 06). The dev-util/intel-ocl-sdk-4.4.0.117-r1 installed the `intel_sdk_for_ocl_applications_2014_ubuntu_4.4.0.117_x64.tgz` opencl package. The `clinfo` command shows ::
+One OpenCL example is a Gigabyte aero 15 Gentoo Linux on a machine with Intel Corporation HD Graphics 530 (rev 06). The dev-util/intel-ocl-sdk-4.4.0.117-r1 installed the `intel_sdk_for_ocl_applications_2014_ubuntu_4.4.0.117_x64.tgz` opencl package. The `clinfo` command shows ::
 
      Platform Name                                   Intel(R) OpenCL    
      Number of devices                                 1

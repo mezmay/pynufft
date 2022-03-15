@@ -1,185 +1,127 @@
 
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="../_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="../_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap-theme.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; PyNUFFT 2020.2.6 documentation</title>
+    <title>Installation &#8212; PyNUFFT 2022.1.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/guzzle.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Installation under Linux" href="Linux.html" />
+    <link rel="prev" title="CPU and GPU (HSA)" href="../overview/CPU_GPU.html" />
   
-
-  
-  
-  
-  
-
-  
-
-  
-  
-    
-
-  
-
-  
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="PyNUFFT 2020.2.6 documentation" href="../index.html"/>
-        <link rel="next" title="Installation under Linux" href="Linux.html"/>
-        <link rel="prev" title="CPU and GPU (HSA)" href="../overview/CPU_GPU.html"/> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
    
-  <div class="wy-grid-for-nav">
 
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
-          
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Linux.html" title="Installation under Linux"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../overview/CPU_GPU.html" title="CPU and GPU (HSA)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">PyNUFFT 2022.1.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Installation</a></li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
 
-          
-            <a href="../index.html" class="icon icon-home"> PyNUFFT
-          
-
-          
-            
-            <img src="../_static/logo.jpeg" class="logo" />
-          
-          </a>
-
-          
-            
-            
-              <div class="version">
-                2020.2.6
-              </div>
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../overview/init.html">Overview</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#system-requirements">System requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#software">Software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#general-installation">General Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#special-topics">Special topics</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Linux.html">Installation under Linux</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Windows.html">Installation under Windows 10</a></li>
-<li class="toctree-l3"><a class="reference internal" href="OpenCL.html">Installation of OpenCL</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../tutor/init.html">Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../manu/init.html">Manual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../API/init.html">API documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../versionhistory.html">Version history</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../acknow/init.html">Acknowledgements</a></li>
-</ul>
-
-            
-          
-        </div>
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
       </div>
-    </nav>
+  <div id="left-column">
+    <div class="sphinxsidebar">
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>Contents</h2>
+    <div class="sidebar-localtoc">
+      <ul>
+<li><a class="reference internal" href="#">Installation</a><ul>
+<li><a class="reference internal" href="#system-requirements">System requirements</a></li>
+<li><a class="reference internal" href="#software">Software</a></li>
+<li><a class="reference internal" href="#general-installation">General Installation</a></li>
+<li><a class="reference internal" href="#special-topics">Special topics</a></li>
+</ul>
+</li>
+</ul>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">PyNUFFT</a>
-        
-      </nav>
-
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>Installation</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="../_sources/installation/init.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
+    </div>
+  </div>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../overview/CPU_GPU.html"
+                          title="previous chapter">CPU and GPU (HSA)</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="Linux.html"
+                          title="next chapter">Installation under Linux</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/installation/init.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="../search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="../index.html">Docs</a></li>
+              
+              <li>Installation</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
             
-  <div class="section" id="installation">
+  <section id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="system-requirements">
+<section id="system-requirements">
 <h2>System requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h2>
 <p><strong>CPU</strong></p>
 <p>Each PyNUFFT instance is designed to be executed on a single node.
@@ -199,7 +141,7 @@ Intel® Xeon® W-2125, Intel® Core™ i9-7900X.</p>
 <p>However, multiple NUFFT_hsa instances may be initiated both on a single GPU and on multiple GPUs,
 but the performance may be impacted (limited by the memory, PCI-E bus or GPU cores).</p>
 <p>To use GPU, a recent NVIDIA’s GPU (after Maxwell, Pascal) with the recent drivers should be working properly.</p>
-<p>The newest nvidia-driver versions of 415.18 or later is recommended.
+<p>The newest nvidia-driver versions of 510.54 or later is recommended.
 Earlier versions may work but please be informed that Nvidia may discontinue support for outdated drivers.</p>
 <p>A general rule is that the memory on the GPU has to be sufficient for computing the NUFFT problem.
 Successful stories include NVIDIA Geforce GTX 965m/GTX 1070 maxQ/1060 6GB,
@@ -209,12 +151,12 @@ and NVIDIA Quadro P6000.</p>
 <p><strong>Operating System</strong></p>
 <p>Ubunut 16.04 - 18.04 are recommended.</p>
 <p>Windows 10 has been tested but it requires Microsoft Studio 2015 community. Please refer to the following special topic about the installation under Windows 10.</p>
-</div>
-<div class="section" id="software">
+</section>
+<section id="software">
 <h2>Software<a class="headerlink" href="#software" title="Permalink to this headline">¶</a></h2>
 <p><strong>Python</strong></p>
 <p>Users must be familiar with Python and its pip packaging system.
-Python 3.6-3.7 are currently supported (Python 2 will not be supported since 1, Jan, 2020).</p>
+Python 3.9 - 3.10 are currently supported (Python 2 has been discontinued).</p>
 <p>To run the NUFFT, the basic CPython, Numpy and Scipy packages must be available on the system.
 IronPython is compatible with CPython so ipython might be useful.</p>
 <p>PyNUFFT can be installed through the pip command.
@@ -224,16 +166,16 @@ Optionally, users can clone the github repository and build the package from the
 <p>However, NUFFT relies on the JIT (just-in-time) compilation mechanism of Reikna/PyCUDA/PyOpenCL.
 The supporting compiler may be:</p>
 <ul class="simple">
-<li><p>gcc-7.3.0, gcc-8.4.0</p></li>
-<li><p>Microsoft (R) Visual Studio 2015 community edition.</p></li>
+<li><p>gcc-11.2.1</p></li>
+<li><p>Microsoft (R) Visual Studio 2022 community edition.</p></li>
 </ul>
 <p>(Please refer to the following section: special topic: Installation under Windows 10).</p>
 <p>To accelerate the code on the graphic processing unit (GPU),
 Reikna, PyCUDA, PyOpencl must be available. Please refer the following special topic: Installation of OpenCL.</p>
 <p>CUDA programming skills are not strictly needed.
 However, it may be helpful if users understand GPU programming.</p>
-</div>
-<div class="section" id="general-installation">
+</section>
+<section id="general-installation">
 <h2>General Installation<a class="headerlink" href="#general-installation" title="Permalink to this headline">¶</a></h2>
 <p>Continuum’s <a class="reference external" href="https://www.continuum.io/downloads">Anaconda</a> environment should provide all the above packages.</p>
 <p><strong>Installation using pip</strong></p>
@@ -257,8 +199,8 @@ $ python setup.py install --user
 <ul class="simple">
 <li><p>Ask <a class="reference external" href="mailto:pynufft&#37;&#52;&#48;gmail&#46;com">pynufft<span>&#64;</span>gmail<span>&#46;</span>com</a> for technical support.</p></li>
 </ul>
-</div>
-<div class="section" id="special-topics">
+</section>
+<section id="special-topics">
 <h2>Special topics<a class="headerlink" href="#special-topics" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
@@ -267,81 +209,54 @@ $ python setup.py install --user
 <li class="toctree-l1"><a class="reference internal" href="OpenCL.html">Installation of OpenCL</a></li>
 </ul>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
-           </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="Linux.html" class="btn btn-neutral float-right" title="Installation under Linux" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="../overview/CPU_GPU.html" class="btn btn-neutral" title="CPU and GPU (HSA)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright 2012-2020, PyNUFFT services.
-
-    </p>
-  </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
-
-</footer>
-
-        </div>
+            
+  <div class="footer-relations">
+    
+      <div class="pull-left">
+        <a class="btn btn-default" href="../overview/CPU_GPU.html" title="previous chapter (use the left arrow)">CPU and GPU (HSA)</a>
       </div>
-
-    </section>
-
+    
+      <div class="pull-right">
+        <a class="btn btn-default" href="Linux.html" title="next chapter (use the right arrow)">Installation under Linux</a>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Linux.html" title="Installation under Linux"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../overview/CPU_GPU.html" title="CPU and GPU (HSA)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">PyNUFFT 2022.1.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Installation</a></li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="../_static/js/bootstrap.js"></script>
+  <div class="footer">
+    &copy; Copyright 2012-2022, PyNUFFT services. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
   </div>
-  
-
-
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'2020.2.6',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/language_data.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
-
-  
-  
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
-      });
-  </script>
-   
-
-</body>
+  </body>
 </html>
